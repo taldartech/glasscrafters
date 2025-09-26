@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlassCrafters India - Stained Glass Art & Classes</title>
-    <meta name="description" content="GlassCrafters India - Your one-stop shop for stained glass art, supplies, and classes. Explore our gallery and learn the art of stained glass.">
+    <meta name="description"
+        content="GlassCrafters India - Your one-stop shop for stained glass art, supplies, and classes. Explore our gallery and learn the art of stained glass.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 9999;
+        }
+        .whatsapp-float a {
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.3rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+            transition: background 0.3s, transform 0.3s;
+        }
+        .whatsapp-float a:hover {
+            background: #128C7E;
+            transform: scale(1.08);
+            color: #fff;
+        }
+    </style>
+
     <!-- Header Section -->
     <header class="header">
         <div class="container">
@@ -18,17 +50,19 @@
             </div>
             <nav class="main-nav">
                 <ul>
+                    <li><a href="#hero">Home</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Gallery <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="dropdown-toggle" href="gallery.html">Gallery <i
+                                class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-menu">
-                            <a href="stained-glass.html">Stained Glass</a>
+                            <a href="stained-gallery.html">Stained Glass</a>
                             <a href="lampshades.html">Lampshades</a>
                             <a href="mosaics.html">Mosaics</a>
                             <a href="fused-glass.html">Fused Glass</a>
                             <a href="church-restoration.html">Church & Restoration</a>
                         </div>
                     </li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#service">Services</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Classes <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-menu">
@@ -37,9 +71,9 @@
                             <a href="painted-course.html">Painted Stained Glass</a>
                         </div>
                     </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu-toggle">
@@ -49,7 +83,8 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero"
+        style="background-image:url('images/img22.jpg'); background-repeat: no-repeat; background-size: cover; ;">
         <div class="hero-content">
             <h1>Beautiful Stained Glass Creations</h1>
             <p>Discover the art of stained glass with our workshops and custom designs</p>
@@ -66,24 +101,91 @@
             <h2 class="section-title">Our Work</h2>
             <div class="category-grid">
                 <div class="category-card">
-                    <img src="images/stained-glass.jpg" alt="Stained Glass">
+                    <img src="./images/img24.jpg" alt="Stained Glass">
                     <div class="category-overlay">
                         <h3>Stained Glass</h3>
-                        <a href="stained-glass.html" class="btn btn-outline">View More</a>
+                        <a href="stained-gallery.html" class="btn btn-outline">View More</a>
                     </div>
                 </div>
                 <div class="category-card">
-                    <img src="images/lampshades.jpg" alt="Lampshades">
+                    <img src="images/img1.jpg" alt="Lampshades">
                     <div class="category-overlay">
                         <h3>Lampshades</h3>
-                        <a href="lampshades.html" class="btn btn-outline">View More</a>
+                        <a href="lampshade.html" class="btn btn-outline">View More</a>
                     </div>
                 </div>
                 <div class="category-card">
-                    <img src="images/mosaics.jpg" alt="Mosaics">
+                    <img src="images/img27.jpg" alt="Mosaics">
                     <div class="category-overlay">
                         <h3>Mosaics</h3>
-                        <a href="mosaics.html" class="btn btn-outline">View More</a>
+                        <a href="mosaic.html" class="btn btn-outline">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Our Services Section` -->
+    <section id="service" class="classes">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="class-grid">
+                <div class="class-card">
+                    <img src="images/img13.jpg" alt="Genuine Stained Glass Class">
+                    <div class="class-info">
+                        <h3>Custom Design & Execution</h3>
+                        <p>Our team at Glasscrafters guides you to select a theme and design for a panel or dome to be
+                            commissioned. If necessary, we could visit the site to judge the position and light
+                            parameters in order to select the intensity of colours and textures and types of glass to be
+                            used. A small-scale drawing is then produced as a proof for approval. Following approval,
+                            the full-scale work is produced. The execution of the stained glass project is a highly
+                            skilled and labour intensive process.</p>
+                    </div>
+                </div>
+                <div class="class-card">
+                    <img src="images/img27.jpg" alt="Mosaic Class">
+                    <div class="class-info">
+                        <h3>Stained Glass Restoration</h3>
+                        <p>Over the years, Glassfrafters has been involved in several major stained glass restoration
+                            projects. We have restored stained glaass windows in several prestigious churches in
+                            Bangalore and South India. Using a variety of techniques, we are able to restore old or
+                            damaged glass panels to their former glory. The original glass is preserved as far as is
+                            possible, while unusable or missing parts are made afresh and assembled. We have our own
+                            furnaces and oxides and we strive to maintain the originality of the antique stained glass
+                            panels. We do both lead came and copper foil techniques and high temperature staining or
+                            painting and firing which will not fade.</p>
+
+                    </div>
+                </div>
+                <div class="class-card">
+                    <img src="images/img15.jpg" alt="Painted Glass Class">
+                    <div class="class-info">
+                        <h3>Stained Glass Art in Public Spaces</h3>
+                        <p>At Glasscrafters, we are always looking for opportunities to make stained glass art for
+                            public spaces such as parks, public buildings such as schools, hospitals and police
+                            stations. We hope to bring a cheery splash of colour to our spaces and could serve as a
+                            low-maintenance creative community project. It would also be eco-friendly as we will be
+                            using smaller left over off cuts or "scrap" glass to make up-cycled art as mosaics or
+                            murals.</p>
+
+                    </div>
+                </div>
+
+                <div class="class-card">
+                    <img src="images/img14.jpg" alt="Painted Glass Class">
+                    <div class="class-info">
+                        <h3>Studio Rental</h3>
+                        <p>We provide our studio facilities for rent for stained glass artists with particular
+                            requirements or for those who do not have their own space to work.</p>
+                    </div>
+                </div>
+
+                <div class="class-card">
+                    <img src="images/img53.jpg" alt="Painted Glass Class">
+                    <div class="class-info">
+                        <h3>Mentoring</h3>
+                        <p>Become an apprentice at Glasscrafters and learn the nuances of the craft with us. We will
+                            mentor you and guide you as per your specific requirements.</p>
                     </div>
                 </div>
             </div>
@@ -91,17 +193,19 @@
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <h2>About GlassCrafters India</h2>
-                    <p>GlassCrafters India is a premier stained glass studio dedicated to preserving and teaching the ancient art of stained glass. With over 15 years of experience, we create beautiful custom pieces and offer comprehensive classes for all skill levels.</p>
-                    <p>Our mission is to bring the beauty of stained glass to homes, businesses, and places of worship across India while fostering a community of glass art enthusiasts.</p>
-                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                    <p>GlassCrafters India is a premier stained glass studio dedicated to preserving and teaching the
+                        ancient art of stained glass. With over 15 years of experience, we create beautiful custom
+                        pieces and offer comprehensive classes for all skill levels.</p>
+                    <p>Our mission is to bring the beauty of stained glass to homes, businesses, and places of worship
+                        across India while fostering a community of glass art enthusiasts.</p>
                 </div>
                 <div class="about-image">
-                    <img src="images/about.jpg" alt="About GlassCrafters India">
+                    <img src="images/img73.jpg" style="width: 100%;" alt="About GlassCrafters India">
                 </div>
             </div>
         </div>
@@ -113,7 +217,7 @@
             <h2 class="section-title">Our Classes</h2>
             <div class="class-grid">
                 <div class="class-card">
-                    <img src="images/class1.jpg" alt="Genuine Stained Glass Class">
+                    <img src="images/img24.jpg" alt="Genuine Stained Glass Class">
                     <div class="class-info">
                         <h3>Genuine Stained Glass</h3>
                         <p>Learn the traditional techniques of stained glass creation from design to installation.</p>
@@ -121,7 +225,7 @@
                     </div>
                 </div>
                 <div class="class-card">
-                    <img src="images/class2.jpg" alt="Mosaic Class">
+                    <img src="images/img21.jpg" alt="Mosaic Class">
                     <div class="class-info">
                         <h3>Stained Glass Mosaic</h3>
                         <p>Create beautiful mosaic art pieces using stained glass in various patterns and designs.</p>
@@ -129,7 +233,7 @@
                     </div>
                 </div>
                 <div class="class-card">
-                    <img src="images/class3.jpg" alt="Painted Glass Class">
+                    <img src="images/img30.jpg" alt="Painted Glass Class">
                     <div class="class-info">
                         <h3>Painted Stained Glass</h3>
                         <p>Master the art of painting on glass to create intricate designs and details.</p>
@@ -139,15 +243,17 @@
             </div>
         </div>
     </section>
+    
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials">
         <div class="container">
             <h2 class="section-title">What Our Students Say</h2>
             <div class="testimonial-slider">
                 <div class="testimonial">
                     <div class="testimonial-content">
-                        <p>"The stained glass course was an amazing experience. The instructors are knowledgeable and patient. I created a beautiful piece that now hangs in my living room!"</p>
+                        <p>"The stained glass course was an amazing experience. The instructors are knowledgeable and
+                            patient. I created a beautiful piece that now hangs in my living room!"</p>
                         <div class="testimonial-author">- Priya S.</div>
                     </div>
                 </div>
@@ -157,13 +263,14 @@
     </section>
 
     <!-- Contact CTA -->
-    <section class="contact-cta">
+    <section id="contact" class="contact-cta">
         <div class="container">
             <h2>Ready to Start Your Stained Glass Journey?</h2>
             <p>Contact us today to schedule a class or discuss your custom project.</p>
-            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            <a target="_blank" href="https://wa.me/98451 98365" class="btn btn-primary">Get in Touch</a>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -171,32 +278,27 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>GlassCrafters India</h3>
-                    <p>Creating beautiful stained glass art since 2008. We offer custom designs, classes, and restoration services.</p>
+                    <p>Creating beautiful stained glass art since 2008. We offer custom designs, classes, and
+                        restoration services.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="classes.html">Classes</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Us</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Glass Street, Mumbai, India</p>
-                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-                    <p><i class="fas fa-envelope"></i> info@glasscraftersindia.com</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
+                    <p><i class="fas fa-map-marker-alt"></i> Glasscrafters, Jugalbandi, Ground Floor, No 3, 4th Cross,
+                        2nd Stage Michaelpalya, Bengaluru, Karnataka 560075, India</p>
+                    <p><i class="fas fa-phone"></i> +91 98451 98365</p>
+                    <p><i class="fas fa-phone"></i> +91 7022569996</p>
+                    <p><i class="fas fa-phone"></i> +91 99005 70333</p>
+                    <p><i class="fas fa-envelope"></i> asad@glasscrafters.in </p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -206,5 +308,14 @@
     </footer>
 
     <script src="js/main.js"></script>
+    </body>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/98451 98365" target="_blank" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
 </body>
+
 </html>
