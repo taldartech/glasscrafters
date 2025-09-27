@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+        <!-- <link rel="icon" type="image/png" href="./images/GlassCraffterLogo.png"> -->
 </head>
 
 <body>
@@ -40,13 +41,19 @@
             transform: scale(1.08);
             color: #fff;
         }
+        .heading1 {
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+        }
     </style>
 
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" style="padding:0.5rem">
         <div class="container">
             <div class="logo">
-                <a href="index.html">GlassCrafters India</a>
+                <a href="index.html#hero">
+                    <img src="./images/GlassCraffterLogo1.png" alt="GlassCrafters India Logo" style="height: 4rem; color:black">
+                </a>
+                <!-- <a href="index.html">GlassCrafters</a> -->
             </div>
             <nav class="main-nav">
                 <ul>
@@ -84,10 +91,10 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero"
-        style="background-image:url('images/img22.jpg'); background-repeat: no-repeat; background-size: cover; ;">
+        style="background-image:url('images/img22.jpg'); background-repeat: no-repeat; background-size:cover;">
         <div class="hero-content">
-            <h1>Beautiful Stained Glass Creations</h1>
-            <p>Discover the art of stained glass with our workshops and custom designs</p>
+            <h1 class="heading1">Beautiful Stained Glass Creations</h1>
+            <p class="heading1">Discover the art of stained glass with our workshops and custom designs</p>
             <div class="cta-buttons">
                 <a href="gallery.html" class="btn btn-primary">View Gallery</a>
                 <a href="classes.html" class="btn btn-secondary">Our Classes</a>
@@ -101,7 +108,7 @@
             <h2 class="section-title">Our Work</h2>
             <div class="category-grid">
                 <div class="category-card">
-                    <img src="./images/img24.jpg" alt="Stained Glass">
+                    <img src="./images/peacock.webp" alt="Stained Glass">
                     <div class="category-overlay">
                         <h3>Stained Glass</h3>
                         <a href="stained-gallery.html" class="btn btn-outline">View More</a>
