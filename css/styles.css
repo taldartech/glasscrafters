@@ -245,10 +245,7 @@ img {
 .hero {
     height: 100vh;
     min-height: 700px;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-    background-image:url('../images/peacock.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/peacock1.webp') no-repeat top center/cover;
     display: flex;
     align-items: center;
     text-align: center;
